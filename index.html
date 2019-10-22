@@ -8,22 +8,81 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="./src/css/bootstrap.min.css" />
   </head>
-  <body>
-    <div class="container">
-      <div class="row justify-content-around">
-        <div class="candidato m-4 col-12 col-md-4" id="gonzalo">
-          <a href="#"><img src="http://ximg.es/200x200/000/fff" alt="123"/></a>
-          <h4>Votos de Gonzalo: <span id="votosG">0</span></h4>
-          <button onclick="activar()" class="btn btn-primary">
-            Votar Por Gonzalo
-          </button>
+  <body style="background: rgba(20, 20, 20, 0.986);">
+    <nav class="navbar navbar-light" style="background-color: #812991;">
+      <a class="navbar-brand" href="#"
+        ><img
+          src="./src/img/logopld.jpg"
+          style="width: 35%;height: auto;"
+          alt="LogoPLD"
+      /></a>
+      <h4 class="eslogan">"Servir al Partido Para Servir Al Pueblo"</h4>
+    </nav>
+    <div class="container m-2">
+      <div
+        class="concarousel p-2"
+        style="background: #812991;border: yellow 5px solid ;"
+      >
+        <h3
+          style="font-family: 'Times New Roman', Times, serif; text-align: center;color: rgb(0, 0, 0);"
+        >
+          El grandísimo Juan Bosch.
+        </h3>
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./src/img/JB1.jpg"
+                class="d-block"
+                alt="..."
+                style="width: 300px;height: auto;margin-left: auto; margin-right: auto;"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./src/img/JB2.jpg"
+                class="d-block"
+                alt="..."
+                style="width: 300px;height: auto;margin-left: auto; margin-right: auto;"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./src/img/JB3.jpg"
+                class="d-block"
+                alt="..."
+                style="width: 300px;height: auto;margin-left: auto; margin-right: auto;"
+              />
+            </div>
+          </div>
         </div>
-        <div class="candidato m-4 col-12 col-md-4" id="Leonel">
-          <a href="#"><img src="http://ximg.es/200x200/000/fff" alt="123"/></a>
-          <h4>Votos de Leonel: <span id="votosL">0</span></h4>
-          <button onclick="activar1()" class="btn btn-primary">
-            Votar Por Leonel
-          </button>
+      </div>
+      <div class="row justify-content-around">
+        <div class="candidato m-4 col-12 col-sm-4" id="gonzalo">
+          <a href="#"
+            ><img
+              src="http://ximg.es/200x200/000/fff"
+              onclick="activar()"
+              alt="123"
+          /></a>
+          <h4 style="color: white;">
+            Votos de Gonzalo: <span id="votosG">0</span>
+          </h4>
+        </div>
+        <div class="candidato m-4 col-12 col-sm-4" id="Leonel">
+          <a href="#"
+            ><img
+              src="http://ximg.es/200x200/000/fff"
+              onclick="activar1()"
+              alt="123"
+          /></a>
+          <h4 style="color: white;">
+            Votos de Leonel: <span id="votosL">0</span>
+          </h4>
         </div>
       </div>
     </div>
