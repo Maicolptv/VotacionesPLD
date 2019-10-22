@@ -10,13 +10,22 @@
   </head>
   <body>
     <div class="container">
-      <div class="candidato" id="gonzalo">
-        <a href="#"><img src="" alt="123"/></a>
-        <h4>Votos de Gonzalo: <span id="votosG">0</span></h4>
+      <div class="row justify-content-around">
+        <div class="candidato m-4 col-12 col-md-4" id="gonzalo">
+          <a href="#"><img src="http://ximg.es/200x200/000/fff" alt="123"/></a>
+          <h4>Votos de Gonzalo: <span id="votosG">0</span></h4>
+          <button onclick="activar()" class="btn btn-primary">
+            Votar Por Gonzalo
+          </button>
+        </div>
+        <div class="candidato m-4 col-12 col-md-4" id="Leonel">
+          <a href="#"><img src="http://ximg.es/200x200/000/fff" alt="123"/></a>
+          <h4>Votos de Leonel: <span id="votosL">0</span></h4>
+          <button onclick="activar1()" class="btn btn-primary">
+            Votar Por Leonel
+          </button>
+        </div>
       </div>
-      <button onclick="activar()" class="btn btn-primary">
-        Votar Por Gonzalo
-      </button>
     </div>
 
     <script src="main.js"></script>
