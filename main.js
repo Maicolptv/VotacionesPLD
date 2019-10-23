@@ -8,7 +8,7 @@ function activar() {
   var gonzalo = document.getElementById('gonzalo');
   votos.innerHTML = votosG;
   votosG++;
-  votosG * 2;
+
   if (votosG > 16) {
     var alerta = document.getElementById('alerta');
     alerta.innerHTML =
@@ -23,7 +23,7 @@ function activar() {
       utterThis.voice = voices.find(v => v.name === 'Ellen')
       utterThis.rate = 0.7
       synth.speak(utterThis)
-      return
+      return speechSynthesis
     }
   })
 }
